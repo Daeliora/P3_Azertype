@@ -1,4 +1,7 @@
 const listeMots = ["Cachalot", "Pétunia", "Serviette"]
+console.log(listeMots[0])
+console.log(listeMots[1])
+console.log(listeMots[2])
 let score = 0
 
 let motUtilisateur = prompt("Entrez le mot : " + listeMots[0])
@@ -17,3 +20,9 @@ if (motUtilisateur === listeMots[2]) {
 }
 
 console.log(score)
+
+let compteur = 0
+while (compteur < 3) {
+    console.log(compteur)
+    i++
+}
