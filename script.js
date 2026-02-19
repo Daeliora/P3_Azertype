@@ -1,19 +1,19 @@
-const motApplication = "Bonjour" // Essayez de mettre un autre mot ici !
-let motUtilisateur = prompt("Entrez le mot : " + motApplication)
+const listeMots = ["Cachalot", "Pétunia", "Serviette"]
+let score = 0
 
-switch (motUtilisateur) {
-    case motApplication:
-        console.log("Bravo !")
-        break
-    case "Gredin":
-        console.log("Restez correct !")
-        break
-    case "Mécréant":
-        console.log("Restez correct !")
-        break
-    case "Vilain":
-        console.log("Soyez gentil !")
-        break
-    default:
-        console.log("Vous avez fait une erreur de frappe.")
+let motUtilisateur = prompt("Entrez le mot : " + listeMOts[0])
+if (motUtilisateur === listeMots[0]) {
+    score++
 }
+
+motUtilisateur = prompt("Entrez le mot : " + listeMOts[1])
+if (motUtilisateur === listeMots[1]) {
+    score++
+}
+
+motUtilisateur = prompt("Entrez le mot : " + listeMOts[2])
+if (motUtilisateur === listeMots[2]) {
+    score++
+}
+
+console.log(score)
