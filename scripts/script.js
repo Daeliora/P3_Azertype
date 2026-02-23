@@ -12,6 +12,11 @@
 
 
 function afficherResultat(score, nbMotsProposes) {
+    let spanScore = document.querySelector(".zoneScore span")
+
+    let affichageScore = `${score} / ${nbMotsProposes}`
+
+    spanScore.innerText = affichageScore
     console.log("Votre score est de " + score + " sur " + nbMotsProposes)
 }
 
